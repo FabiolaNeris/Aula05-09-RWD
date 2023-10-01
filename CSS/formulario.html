@@ -6,26 +6,53 @@
     <title>Formulário</title>
 </head>
 <body>
-    <form>
-        <label for="idnome">Nome: </label>
-        <input id="idnome" type="text" name="nome"><br>
-        <label for="idemail">Email: </label>
-        <input id="idemail" type="text" name="email"><br>
-        <input type="submit" value="Enviar"><br>
-        <label for="idsenha">Senha</label>
-        <input id="senha" type="password" name="senha"><br>
-        <label for="idbusca">Pesquise</label>
-        <input id="idbusca" type="search" name="busca"><br>
-        <label for="idsite">Site</label>
-        <input id="idsite" type="url" name="site"><br>
-        <label for="idtelefone">Telefone para contato</label>
-        <input id="idtelefone" type="tel" name="telefone"><br>
-        <input id="iddata" type="date" name="data"><br>
-        <input id="idhora" type="time" name="hora"><br>
-        <input id="idhoradata" type="datetime-local" name="horadata"><br>
-        <input id="idmes" type="month" name="mes"><br>
-        <input id="idsemana" type="week" name="semana"><br>
-        <input type="number" name="valor" id="idvalor" min="0" max="30" step="3"><br>
-    </form>
+    <main>
+        <form>
+            <label for="idnome">Nome Completo</label>
+            <input id="idnome" type="text" name="nome" placeholder="Digite seu nome completo"><br>
+            
+
+            <label for="idemail">Email</label>
+            <input id="idemail" type="email" name="email" placeholder="Digite seu email"><br>
+
+            <label for="idsenha">Senha</label>
+            <input id="idsenha" type="password" name="senha" placeholder="Senha"><br>
+
+            <label for="idconfirmasenha">Confirme a Senha</label>
+            <input id="idconfirmasenha" type="password" name="confirmacao" placeholder="Confirme sua senha"><br>
+
+            <label for="iddata">Data de Nascimento</label>
+            <input id="iddata" type="date" name="data" placeholder="Data de nascimento"><br>
+
+            <label for="ididade">Idade</label>
+            <input id="ididade" type="number" name="idade" placeholder="Idade"><br>
+
+            <label for="idgenero">Gênero</label>
+            <input id="idgenero" type="text" name="genero" placeholder="Gênero"><br>
+
+            <label for="idareas">Áreas de Interesse</label>
+            <select id="idareas" name="areas" placeholder="Areas de Interesse">
+                <option value="Programação">Programação</option>
+                <option value="Design">Desing</option>
+                <option value="Empreendedorismo">Empreendedorismo</option>
+                <option value="IA">IA</option>
+                <option value="VR/AR">VR/AR</option>
+                <option value="CS">Cybersecurity</option>
+            </select><br>
+
+            <label for="idescolaridade">Níve de escolaridade</label>
+            <select id="idescolaridade" name="escolaridade" placeholder="Escolaridade">
+                <option value="EF">Ensino fundamental</option>
+                <option value="EM">Ensino Médio</option>
+                <option value="Graduacao">Graduação</option>
+                <option value="Pos">Pós Graduação</option>
+            </select><br>
+
+            <label for="idbio">Bio</label>
+            <textarea id="idbio" name="bio" cols="10" rows="2" placeholder="Biografia"></textarea><br>
+
+
+        </form>
+    </main>
 </body>
 </html>
