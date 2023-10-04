@@ -1,0 +1,169 @@
+:root {
+    --gray-200: #8695a4;
+    --gray-900: #21243d;
+  
+    --red-400: #ff6464;
+  
+    --blue-100: #edf7fa;
+    --blue-800: #142850;
+  
+    --white: #fff;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: "Heebo", sans-serif;
+    
+  }
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    justify-content: flex-end;
+  }
+
+a{
+    text-decoration: none;
+    color: var(--gray-900);
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
+.apresentacao section{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+.apresentacao section h1 {
+    font-size: 40px;
+    max-width: 400px;
+  }
+
+.apresentacao section p {
+    max-width: 500px;
+  }
+
+.apresentacao section button {
+    height: 40px;
+    width: 150px;
+    background-color: var(--red-400);
+    color: var(--white);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+
+.container{
+background-color: var(--blue-100);
+margin-top: 50PX;
+}  
+
+.container section h2{
+    font-weight: lighter;
+    font-size: 18px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.noticiario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    gap: 50px;
+    
+}
+
+.noticiario article{
+    background-color: var(--white);
+    padding: 10px;
+    width: 450px;
+}
+
+.noticiario h3, span,time,p{
+    padding: 10px;
+}
+
+.trabalhos{
+   max-width: 900px;
+   margin: 0 auto;
+   padding: 30px 0;
+}
+
+.trabalhos h2{
+  font-weight: lighter;
+  font-size: 18px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+
+.textostrabalho h3{
+  font-size: 24px;
+  color: var(--blue-800);
+}
+
+.textostrabalho time{
+  background-color: var(--blue-800);
+  color: white;
+  border-radius: 30px;
+  width: 52px;
+  padding: 2px 8px;;
+}
+
+.textostrabalho span{
+  opacity: 0.5;
+}
+
+.trabalhos .textostrabalho{
+  display: flex;
+  gap: 25px;
+  padding: 20px 0;
+  border-bottom: 1px solid lightgrey ;
+}
+
+.textostrabalho h3, time, p{
+  padding: 20px 0;
+}
+
+footer section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer span{
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  opacity: 0.9;
+}
